@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splash_screen"
+    android:background="@color/white"
+    >
+<ImageView
+    android:id="@+id/splash"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/messenger"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    />
+<ProgressBar
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/splash"
+    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+    android:indeterminate="true"
+    android:layout_marginLeft="70dp"
+    android:layout_marginRight="70dp"
+    android:indeterminateTint="@color/color"
+
+   />
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="ChatVerse"
+        android:layout_marginBottom="40dp"
+        android:textColor="@color/color"
+        android:textSize="25dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="End-to-end encrypted"
+        android:drawableLeft="@drawable/lock"
+        android:layout_marginBottom="10dp"
+        android:textColor="#474444"
+        android:textSize="15dp" />
+
+</RelativeLayout>
